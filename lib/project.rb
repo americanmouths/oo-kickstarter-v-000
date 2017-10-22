@@ -1,5 +1,5 @@
 class Project
-  attr_accessor :backer, :title
+  attr_accessor :backers, :title
 
   def initialize(title)
     @title = title
@@ -12,8 +12,6 @@ class Project
 
   def add_backer(backer)
     @backers << backer
-    @backers.each do |new_backer|
-    Backer.back_projects << new_backer
   end
 end
 
