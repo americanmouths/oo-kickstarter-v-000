@@ -10,7 +10,7 @@ class Backer
     @backed_projects.each do |new_backer|
     Project.backers << new_backer
   end
-    @backed_project << project
+    @backed_projects << project
   end
 
 end
