@@ -1,3 +1,5 @@
+require 'pry'
+
 class Backer
   attr_accessor :backed_projects, :name
 
@@ -11,6 +13,7 @@ class Backer
     Project.backers(new_backer)
   end
     @backed_projects << project
+    binding.pry
   end
 
 end
