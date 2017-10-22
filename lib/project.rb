@@ -11,8 +11,8 @@ class Project
     @backers.each do |new_backer|
     Backer.backed_projects << new_backer
   end
+end
 
-    
 
 end
 
