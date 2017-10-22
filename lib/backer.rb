@@ -10,9 +10,7 @@ class Backer
 
   def back_project(project)
     @backed_projects << project
-    @backed_projects.each do |new_backer|
-    @backed_projects << Project.backers(new_backer)
-  end
+    project.backer = self
   end
 
 end
