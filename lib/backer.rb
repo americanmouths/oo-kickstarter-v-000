@@ -7,7 +7,12 @@ class Backer
   end
 
   def back_project(project)
-    @backed_projects << project
+    @backed_projects.each do |new_backer|
+    Project.backers << new_backer
+  end
+    @backed_project << project
   end
 
 end
+
+#backer has many projects
